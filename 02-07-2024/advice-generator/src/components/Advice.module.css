@@ -1,0 +1,57 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1f2632;
+}
+
+.card {
+  background-color: #2c3a47;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%; 
+  margin: 0 auto;
+}
+
+.title {
+  color: #52ffa8;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.advice {
+  color: #cfe0e8;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.divider {
+  width: 100%; 
+  margin: 1.5rem 0;
+}
+
+.button {
+  background-color: #52ffa8;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(82, 255, 168, 0.5);
+  margin: 0 auto; 
+}
+
+.button img {
+  width: 24px;
+  height: 24px;
+}
