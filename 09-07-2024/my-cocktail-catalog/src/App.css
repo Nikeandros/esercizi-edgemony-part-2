@@ -1,0 +1,176 @@
+body {
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  font-family: 'Arial', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative; 
+}
+
+.header {
+  width: 100%;
+  background: rgba(15, 12, 41, 0.95);
+  padding: 5px 0;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+.header h1 {
+  margin: 0;
+  color: #ff4b1f;
+  text-shadow: 0 0 10px rgba(255, 75, 31, 0.7);
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-container {
+  position: absolute; 
+  top: 10px;
+  left: 10px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(15, 12, 41, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.cocktail-form, .filter {
+  width: 100%;
+}
+
+.cocktail-form input,
+.cocktail-form textarea,
+.filter input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 0.9em;
+}
+
+.cocktail-form button {
+  padding: 8px;
+  border: none;
+  background-color: #ff4b1f;
+  color: white;
+  font-size: 0.9em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cocktail-form button:hover {
+  background-color: #ff7b56;
+}
+
+.main-content {
+  margin-top: 50px; 
+  overflow-y: auto;
+  height: calc(100vh - 50px); 
+  width: calc(100% - 270px); 
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+}
+
+.main-content::-webkit-scrollbar {
+  width: 12px;
+}
+
+.main-content::-webkit-scrollbar-track {
+  background: rgba(15, 12, 41, 0.9);
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background-color: #ff4b1f;
+  border-radius: 20px;
+  border: 3px solid #24243e;
+}
+
+.cocktail-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cocktail-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cocktail-item img {
+  width: 80%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.cocktail-item h2 {
+  font-size: 1em;
+  margin: 10px 0;
+  color: #ff4b1f;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cocktail-item p {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.cocktail-item button {
+  padding: 5px 8px;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  font-size: 0.8em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cocktail-item button:hover {
+  background-color: #c82333;
+}
+
+.cocktail-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cocktail-item img:hover {
+  transform: scale(1.1);
+}
