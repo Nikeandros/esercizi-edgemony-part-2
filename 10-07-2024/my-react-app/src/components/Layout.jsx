@@ -1,11 +1,18 @@
-
 import React from 'react';
+import './layout.css';
 
 const Layout = ({ children }) => {
   return (
-    <div style={{ border: '2px solid blue', padding: '20px' }}>
-      <h1>My Layout</h1>
-      <div>{children}</div>
+    <div className="layout-container">
+      <header className="layout-header">
+        <h1>Cocktail Catalog</h1>
+      </header>
+      <main className="layout-main">
+        {children}
+      </main>
+      <footer className="layout-footer">
+        <p>© 2024 Cocktail Catalog. All rights reserved.</p>
+      </footer>
     </div>
   );
 };
