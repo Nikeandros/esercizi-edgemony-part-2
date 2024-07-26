@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Aggiungi stili globali */
+body {
+  @apply bg-gray-100 text-gray-900 font-sans antialiased;
+}
+
+/* Aggiungi transizioni per gli effetti */
+.transition {
+  @apply transition-all duration-300 ease-in-out;
+}
