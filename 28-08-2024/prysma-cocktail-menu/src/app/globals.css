@@ -1,0 +1,67 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  @apply text-5xl font-extrabold text-indigo-900 mb-10;
+}
+
+input[type="text"] {
+  @apply p-2 w-full max-w-sm border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 gap-10;
+}
+
+button {
+  @apply bg-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 border border-gray-300;
+}
+
+button img {
+  @apply w-full h-40 object-cover rounded-t-lg;
+}
+
+button div {
+  @apply p-2 text-center;
+}
+
+button h3 {
+  @apply text-lg font-semibold text-indigo-800;
+}
+
+.cocktail-list {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-5xl mx-auto mt-10;
+}
+
+.cocktail-detail {
+  @apply relative w-full flex flex-col items-center justify-center bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105;
+}
+
+.cocktail-detail img {
+  @apply w-80 h-80 object-cover rounded-lg shadow-lg border border-indigo-200 mb-4 gap-3;
+}
+
+.cocktail-detail .info {
+  @apply p-6 text-center bg-indigo-50 rounded-lg shadow-lg border border-indigo-200 flex items-center;
+}
+
+.cocktail-detail h2 {
+  @apply text-4xl font-bold mb-4 text-indigo-900;
+}
+
+.cocktail-detail p {
+  @apply text-gray-800 text-base mb-4;
+}
+
+.cocktail-detail ul {
+  @apply list-disc list-inside pl-4 text-left;
+}
+
+.cocktail-detail li {
+  @apply text-gray-700;
+}
